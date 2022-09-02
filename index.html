@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto CAC</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <header>
-        <img src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy">
-        <h2>Conf Bs As</h2>
+        <img src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy" width="200">
+        <h2 class="titulo">Conf Bs As</h2>
         <nav>
             <a href="#">La Conferencia</a>
             <a href="./pages/oradores.html">Los Oradores</a>
@@ -23,8 +24,8 @@
     <main>
         <section>
             <img src="./assets/imagenes/ba2.jpg" alt="imagen del Palacio de Aguas Argentinas" loading="lazy"> 
-            <h1>Conferencia Buenos Aires</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam commodi, dolorum recusandae quae asperiores unde quas laboriosam deleniti quo eveniet ad neque aliquid architecto, libero vero! Necessitatibus, excepturi libero.</p>
+            <h1 class="TituloPrincipal">Conferencia Buenos Aires</h1>
+            <p class="ParrafoPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <a href="./pages/contacto.html">Quiero ser orador</a>
             <a href="./pages/comprartickets.html">Comprar ticket</a>
         </section>
@@ -32,25 +33,57 @@
 <br><br>
 
 <section>
-    <div>
+    <h2 class="tituloOradores">Oradores</h2>
+    <div class="img" id="uno">
         <img src="./assets/imagenes/steve.jpg" alt="Imagen de Steve Job"loading="lazy" width="300">
         <h3>Steve Jobs</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum illum iste commodi reprehenderit veritatis vel reiciendis natus deserunt aut beatae cupiditate labore sunt, vitae aspernatur maiores nobis ea tempora.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <br>
-    <div>
+    <div class="img" id="dos">
         <img src="./assets/imagenes/bill.jpg" alt="Imagen de Bill Gates"loading="lazy" width="300">
         <h3>Bill Gates</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum illum iste commodi reprehenderit veritatis vel reiciendis natus deserunt aut beatae cupiditate labore sunt, vitae aspernatur maiores nobis ea tempora.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
     </div>
     <br>
-    <div>
-        <img src="./assets/imagenes/ada.jpeg" alt="Imagen de Ada"loading="lazy" width="300">
+    <div class="img" id="tres">
+        <img src="./assets/imagenes/ada.jpeg" alt="Imagen de Ada"loading="lazy" width="300" >
         <h3>Ada</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum illum iste commodi reprehenderit veritatis vel reiciendis natus deserunt aut beatae cupiditate labore sunt, vitae aspernatur maiores nobis ea tempora.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
     </div>
    
 </section>
     <br>
+
+<section>
+    <img src="./assets/imagenes/honolulu.jpg" alt="imagen de hawai" loading="lazy" width="700">
+<div class="lugar">
+    <h3> Bs As -  Octubre</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minima voluptatum illum perspiciatis sed autem magnam itaque culpa distinctio labore temporibus, iste magni doloremque explicabo, repellendus rem laborum assumenda nostrum.</p>
+    <a href="">Comoce más</a>
+</div>
+
+<section class="ConvierteteEnOrador">
+    <h3 > Conviertete en un</h3>
+    <h2 >Orador</h2>
+    <p>Anotate como orador para dar una charla</p>
+    <form action="">
+        <input type="Nombre" placeholder="Nombre">
+        <input type="Apellido" placeholder="Apellido">
+        <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+                <input type="submit"value="Enviar solicitud">
+            </div>
+            
+        </div>
+    </form>
+    
+    
+</section>
+
+</section>
 </body>
 </html>

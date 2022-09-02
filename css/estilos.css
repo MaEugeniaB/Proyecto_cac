@@ -1,0 +1,36 @@
+/* comentario
+*/
+header{
+    background-color: rgb(52,58,64);
+    
+}
+.TituloPrincipal{
+    text-align: right;
+}
+.ParrafoPrincipal{
+    text-align: right;
+}
+.tituloOradores{
+    text-align: center;
+}
+
+#uno{
+    position: relative;
+    
+}
+
+#dos{
+    position: relative;
+   
+}
+.lugar {
+   float: right;
+    background-color: rgb(52,58,64);
+    color: aliceblue;
+    display: block;
+    width: 800px;
+    height: 445px;
+}
+.ConvierteteEnOrador{
+    text-align: center;
+}
