@@ -1,28 +1,86 @@
 /* comentario
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 header{
     background-color: rgb(52,58,64);
-    
-}
-.TituloPrincipal{
-    text-align: right;
-}
-.ParrafoPrincipal{
-    text-align: right;
-}
-.tituloOradores{
-    text-align: center;
+    font-family: Roboto;
+    position: relative;
+      
+}    
+.titulo{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 12%;
 }
 
+.link{
+    color: white;
+    text-decoration: none;
+    
+}
+main{
+    background-image: url(../assets/imagenes/ba1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    height: 90vh;
+}
+.TextoPrincipal{
+    text-align: right;
+    font-family: Roboto;
+    position: relative;
+    top: 50%;
+    right: 10%;
+    color: white;
+}
+.linkPPal {
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+
+/*.ParrafoPrincipal{
+    text-align: right;
+    font-family: Roboto;
+}*/
+.Oradores{
+    font-family: Roboto;
+}
+
+.tituloOradores{
+    text-align: center;
+    position: relative;
+}
+
+.img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: black;
+    padding: 10;
+    margin: 10;
+}
 #uno{
     position: relative;
+    top: 150%;
+    left: 15%;
     
 }
 
 #dos{
-    position: relative;
-   
+    position: absolute;
+    top: 133%;
+    left: 40%;
 }
+
+#tres{
+    position: absolute;
+    top: 133%;
+    left: 65%;
+}
+
 .lugar {
    float: right;
     background-color: rgb(52,58,64);
@@ -30,7 +88,9 @@ header{
     display: block;
     width: 800px;
     height: 445px;
+    font-family: Roboto;
 }
 .ConvierteteEnOrador{
     text-align: center;
+    font-family: Roboto;
 }
