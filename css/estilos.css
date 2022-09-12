@@ -3,39 +3,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 header{
     background-color: rgb(52,58,64);
-    font-family: Roboto;
+    width: 100vw;
     position: relative;
-      
+    font-family: Roboto;
+    margin: 10px;
+    padding: 10px;
+    
 }    
-.titulo{
+
+header h2{
     color: white;
     position: absolute;
     top: 15%;
     left: 12%;
 }
 
-.link{
-    color: white;
-    text-decoration: none;
-    
+header a{
+   color: white;
+   text-decoration: none;
+   font-size: 1rem;
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+   position: relative;
+   top: 0%;
+   left: 45%;
+
 }
+
 main{
-    background-image: url(../assets/imagenes/ba1.jpg);
+    background-color: rgba(18, 18, 18, 0.386);
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/imagenes/ba1.jpg);
+    /*background-image: url(../assets/imagenes/ba1.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: black;
     height: 90vh;
+    
 }
 .TextoPrincipal{
     text-align: right;
     font-family: Roboto;
     position: relative;
     top: 50%;
-    right: 10%;
+    right: 5%;
     color: white;
+    
 }
-.linkPPal {
+main a {
     text-decoration: none;
     color: white;
     text-align: right;
@@ -47,12 +63,12 @@ main{
 }*/
 .Oradores{
     font-family: Roboto;
-}
+    position: relative;
+    }
 
 .tituloOradores{
     text-align: center;
-    position: relative;
-}
+    }
 
 .img{
     display: inline-block;
@@ -66,19 +82,22 @@ main{
     position: relative;
     top: 150%;
     left: 15%;
+    width: 20%;
     
 }
 
 #dos{
     position: absolute;
-    top: 133%;
+    top: 18%;
     left: 40%;
+    width: 20%;
 }
 
 #tres{
     position: absolute;
-    top: 133%;
+    top: 18%;
     left: 65%;
+    width: 20%;
 }
 
 .lugar {
@@ -90,6 +109,7 @@ main{
     height: 445px;
     font-family: Roboto;
 }
+
 .ConvierteteEnOrador{
     text-align: center;
     font-family: Roboto;
