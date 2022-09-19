@@ -9,85 +9,124 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy" width="200">
-        <h2>Conf Bs As</h2>
-        <nav>
-            <a href="#" class="link">La Conferencia</a>
-            <a href="./pages/oradores.html" class="link">Los Oradores</a>
-            <a href="./pages/lugaryfecha.html" class="link">Lugar y Fecha</a>
-            <a href="./pages/contacto.html" class="link">Conviértete en Orador</a>
-            <a href="./pages/comprartickets.html" class="link">Comprar tiket</a>
+    <header class="header__contenedor">
+        <div class="logo">
+            <img class="img__logo" src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy" width="200">
+            <h2>Conf Bs As</h2>
+        </div>
+       
+        <nav class="navegador">
+            <a href="#" >La Conferencia</a>
+            <a href="./pages/oradores.html" >Los Oradores</a>
+            <a href="./pages/lugaryfecha.html" >Lugar y Fecha</a>
+            <a href="./pages/contacto.html" >Conviértete en Orador</a>
+            <a class="comprar__tickets" href="./pages/comprartickets.html" >Comprar tiket</a>
         </nav>
     </header>
    
-    <main>
-        <section class="TextoPrincipal">
-           <!-- <img src="./assets/imagenes/ba2.jpg" alt="imagen del Palacio de Aguas Argentinas" loading="lazy"> -->
-            <h1 >Conferencia Buenos Aires</h1>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error deleniti alias ipsa nisi porro iusto et corrupti sapiente, laborum eveniet, itaque ullam consequatur corporis eum debitis id? Temporibus, labore. </p>
-            <a href="./pages/contacto.html" class="linkPPal">Quiero ser orador</a>
-            <a href="./pages/comprartickets.html" class="linkPPal">Comprar ticket</a>
-        </section>
+    <main class="Principal">
+                <!-- <img src="./assets/imagenes/ba2.jpg" alt="imagen del Palacio de Aguas Argentinas" loading="lazy"> -->
+        <div class="Texto">
+            <h1 >Conf Bs As</h1>
+            <br>
+            <p > Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!  </p>
+        </div>
+        
+       <div class="link">
+            <button>
+                <a href="./pages/contacto.html" class="linkPPal">Quiero ser orador</a>
+            </button>
+            <button class="boton__verde">
+                <a href="./pages/comprartickets.html" class="linkPPal">Comprar ticket</a>
+            </button>
+           
+       </div>
+        
     </main>
-<br><br>
 
-<section class="Oradores">
-    <h4 class="tituloOradores">Conoce a los</h4>
-    <h2 class="tituloOradores">Oradores</h2>
-    <div class="img" id="uno">
-        <img src="./assets/imagenes/steve.jpg" alt="Imagen de Steve Job"loading="lazy" width="300">
-        <h3>Steve Jobs</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <br>
-    <div class="img" id="dos">
-        <img src="./assets/imagenes/bill.jpg" alt="Imagen de Bill Gates"loading="lazy" width="300">
-        <h3>Bill Gates</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
-    <br>
-    <div class="img" id="tres">
-        <img src="./assets/imagenes/ada.jpeg" alt="Imagen de Ada"loading="lazy" width="300" >
-        <h3>Ada</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
-   
-</section>
-<br> <br>
-
-<section>
-    <img src="./assets/imagenes/honolulu.jpg" alt="imagen de hawai" loading="lazy" width="700">
-    <div class="lugar">
-        <h3> Bs As -  Octubre</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minima voluptatum illum perspiciatis sed autem magnam itaque culpa distinctio labore temporibus, iste magni doloremque explicabo, repellendus rem laborum assumenda nostrum.</p>
-        <a href="">Comoce más</a>
-    </div>
-</section>
-
-<section class="ConvierteteEnOrador">
-    <h3 > Conviertete en un</h3>
-    <h2 >Orador</h2>
-    <p>Anotate como orador para dar una charla</p>
-    <form action="">
-        <input type="Nombre" placeholder="Nombre">
-        <input type="Apellido" placeholder="Apellido">
-        <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div>
-                <input type="submit"value="Enviar solicitud">
+    <section class="Oradores">
+        <div class="titulo__Oradores">
+            <h4>Conoce a los</h4>
+            <h2>Oradores</h2>
+        </div>
+       
+        <div class="Tarjetas">
+            <div class="img">
+                <img src="./assets/imagenes/steve.jpg" alt="Imagen de Steve Job"loading="lazy" width="300">
+                <br>
+                <h3>Steve Jobs</h3>
+                <br>
+                
+                <div class="ParrafoTarjeta">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti ducimus optio reprehenderit nulla dicta magnam veniam suscipit omnis? Cumque nesciunt, similique ea at repudiandae maxime vel quaerat repellendus voluptatem?.</p>
+                </div>
             </div>
             
+            <div class="img">
+                <img src="./assets/imagenes/bill.jpg" alt="Imagen de Bill Gates"loading="lazy" width="300">
+                <br>
+                <h3>Bill Gates</h3>
+                <br>
+                
+                <div class="ParrafoTarjeta">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti ducimus optio reprehenderit nulla dicta magnam veniam suscipit omnis? Cumque nesciunt, similique ea at repudiandae maxime vel quaerat repellendus voluptatem?.</p>
+                </div>
+            </div>
+            
+            <div class="img"">
+                <img src="./assets/imagenes/ada.jpeg" alt="Imagen de Ada"loading="lazy" width="300" >
+                <br>
+                <h3>Ada Lovelace</h3>
+                <br>
+                
+                <div class="ParrafoTarjeta">
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti ducimus optio reprehenderit nulla dicta magnam veniam suscipit omnis? Cumque nesciunt, similique ea at repudiandae maxime vel quaerat repellendus voluptatem?.</p>
+                </div>
+            </div>
         </div>
-    </form>
+        
+    </section>
     
-    
-<!-- prueba-->
-</section>
+    <section class="ImagenPartida">
+        <div class="ImagenIzq">
+            
+        </div> 
 
-</section>
+        <div class="lugar">
+            <h3> Bs As -  Octubre</h3>
+            <p class="texto__lugar"> Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidado que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+            <button class="boton">
+                <a href="Conoce_mas">Comoce más</a>
+            </button>
+        </div>
+    </section>
+    
+    <section class="ConvierteteEnOrador">
+        <h5 > CONVIÉRTETE EN UN</h5>
+        <h2 >ORADOR</h2>
+        <p>Anotate como orador para dar una charla</p>
+        <form action="">
+            <input type="Nombre" placeholder="Nombre">
+            <input type="Apellido" placeholder="Apellido">
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                    <input type="submit"value="Enviar solicitud">
+                </div>
+                
+            </div>
+        </form>
+        
+        
+    <!-- prueba-->
+    </section>
+    
+    </section>
+
+<br><br>
+
 
 </body>
 </html>

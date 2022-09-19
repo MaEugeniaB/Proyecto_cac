@@ -1,116 +1,194 @@
 /* comentario
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
-header{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Montserrat;
+}
+
+.header__contenedor{
+    display: flex;
+    justify-content: center;
     background-color: rgb(52,58,64);
     width: 100vw;
-    position: relative;
-    font-family: Roboto;
-    margin: 10px;
-    padding: 10px;
-    
-}    
-
-header h2{
+    height: 15vh;
     color: white;
-    position: absolute;
-    top: 15%;
-    left: 12%;
+}   
+
+.logo{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img__logo{
+    width: 35%;
+}
+
+.navegador{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 45%;
+   color: white;
+   text-decoration: none;
+   font-size: 0.9rem;
 }
 
 header a{
    color: white;
    text-decoration: none;
-   font-size: 1rem;
-   display: inline-block;
-   padding: 10px;
-   margin: 10px;
-   position: relative;
-   top: 0%;
-   left: 45%;
-
 }
 
-main{
-    background-color: rgba(18, 18, 18, 0.386);
+.comprar__tickets{
+    color: rgb(54, 167, 54);
+}
+
+.Principal{
+    width: 100vw;
     background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/imagenes/ba1.jpg);
-    /*background-image: url(../assets/imagenes/ba1.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: black;
-    height: 90vh;
-    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;        
 }
-.TextoPrincipal{
-    text-align: right;
-    font-family: Roboto;
-    position: relative;
-    top: 50%;
-    right: 5%;
+
+.Texto{
+    /*background-color: blue;*/
+    width: 30vw;
     color: white;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: end;
+    margin: 2%;
+    line-height: 1.4rem;
     
 }
+
+.link{
+    background-color: transparent;
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2%;
+    
+}
+
+main button{
+    background-color: transparent;
+    padding: 2%;
+    border-color: aliceblue;
+    font-size: 1.1rem;    
+    border-radius: 10px;
+}
+
+.boton__verde{
+    background-color: rgb(54, 167, 54);
+    padding: 2%;
+    border-color: rgb(54, 167, 54);
+    border-radius: 10px;
+}
+
 main a {
     text-decoration: none;
-    color: white;
-    text-align: right;
+    color: white;    
 }
 
-/*.ParrafoPrincipal{
-    text-align: right;
-    font-family: Roboto;
-}*/
 .Oradores{
-    font-family: Roboto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
     }
 
-.tituloOradores{
-    text-align: center;
+.titulo__Oradores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tarjetas{
+    /*background-color: brown;*/
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    width: 80%;
     }
 
 .img{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
     color: black;
-    padding: 10;
-    margin: 10;
+    /*padding: 1%;
+    margin: 1;*/
 }
-#uno{
-    position: relative;
-    top: 150%;
-    left: 15%;
-    width: 20%;
-    
+.ParrafoTarjeta{
+    width: 80%;
+    font-size: 0.7rem;
+    margin: 1,5%;
+    line-height: 1.4rem;
+
 }
 
-#dos{
-    position: absolute;
-    top: 18%;
-    left: 40%;
-    width: 20%;
+.ImagenPartida{
+    display: flex;
+    height: 70vh;
+    margin-bottom: 3%;
 }
-
-#tres{
-    position: absolute;
-    top: 18%;
-    left: 65%;
-    width: 20%;
+.ImagenIzq{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-image: url(../assets/imagenes/honolulu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 .lugar {
-   float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    font-size: 1rem;
+    height: 100%;
+    width: 50%;
     background-color: rgb(52,58,64);
     color: aliceblue;
-    display: block;
-    width: 800px;
-    height: 445px;
-    font-family: Roboto;
+}
+.texto__lugar{
+    padding: 2rem 0;
+    line-height: 1.4rem;
+    font-size: 0.75rem;
+}
+
+button a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.boton{
+    background-color: transparent;
+    padding: 2%;
+    border-color: aliceblue;
+    font-size: 1.1rem;
+    border-radius: 10px;
 }
 
 .ConvierteteEnOrador{
     text-align: center;
-    font-family: Roboto;
 }
