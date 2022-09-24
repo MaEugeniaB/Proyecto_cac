@@ -12,15 +12,21 @@
     <header class="header__contenedor">
         <div class="logo">
             <img class="img__logo" src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy" width="200">
-            <h2>Conf Bs As</h2>
+            <!--<h2>Conf Bs As</h2>-->
+            <a href="#" >Conf Bs As</a>
         </div>
        
         <nav class="navegador">
-            <a href="#" >La Conferencia</a>
-            <a href="./pages/oradores.html" >Los Oradores</a>
-            <a href="./pages/lugaryfecha.html" >Lugar y Fecha</a>
-            <a href="./pages/contacto.html" >Conviértete en Orador</a>
-            <a class="comprar__tickets" href="./pages/comprartickets.html" >Comprar tiket</a>
+            <div class="RenglonUno">
+                <a href="#" >La Conferencia</a>
+                <a href="#oradores" >Los Oradores</a>
+                <a href="#LugaryFecha" >Lugar y Fecha</a>
+            </div>
+            <div class="RenglonDos">
+                <a href="#Contacto" >Conviértete en Orador</a>
+                <a class="comprar__tickets" href="./pages/comprartickets.html" >Comprar Tickets</a>
+            </div>
+            
         </nav>
     </header>
    
@@ -29,12 +35,12 @@
         <div class="Texto">
             <h1 >Conf Bs As</h1>
             <br>
-            <p > Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!  </p>
+            <p > Llega a la Ciudad Autónoma de Buenos Aires, la conferencia más esperada. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Vení a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!  </p>
         </div>
         
        <div class="link">
             <button>
-                <a href="./pages/contacto.html" class="linkPPal">Quiero ser orador</a>
+                <a href="#Contacto" class="linkPPal">Quiero ser orador</a>
             </button>
             <button class="boton__verde">
                 <a href="./pages/comprartickets.html" class="linkPPal">Comprar ticket</a>
@@ -44,7 +50,7 @@
         
     </main>
 
-    <section class="Oradores">
+    <section class="Oradores" id="oradores">
         <div class="titulo__Oradores">
             <h4>Conoce a los</h4>
             <h2>Oradores</h2>
@@ -52,13 +58,13 @@
        
         <div class="Tarjetas">
             <div class="img">
-                <img src="./assets/imagenes/steve.jpg" alt="Imagen de Steve Job"loading="lazy" width="300">
+                <img src="./assets/imagenes/Marck2.jpg" alt="Imagen de Mark Zuckerberg"loading="lazy" width="300">
                 <br>
-                <h3>Steve Jobs</h3>
-                <br>
+                <h3>Mark Zuckerberg</h3>
+                
                 
                 <div class="ParrafoTarjeta">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti ducimus optio reprehenderit nulla dicta magnam veniam suscipit omnis? Cumque nesciunt, similique ea at repudiandae maxime vel quaerat repellendus voluptatem?.</p>
+                    <p>Programador y empresario estadounidense, uno de los creadores y fundadores de Facebook (desde 2021, Meta Platforms) y la red social homónima, y su actual presidente. Para desarrollar la red, Zuckerberg contó con el apoyo de sus compañeros de la Universidad de Harvard.</p>
                 </div>
             </div>
             
@@ -66,67 +72,84 @@
                 <img src="./assets/imagenes/bill.jpg" alt="Imagen de Bill Gates"loading="lazy" width="300">
                 <br>
                 <h3>Bill Gates</h3>
-                <br>
+                
                 
                 <div class="ParrafoTarjeta">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti ducimus optio reprehenderit nulla dicta magnam veniam suscipit omnis? Cumque nesciunt, similique ea at repudiandae maxime vel quaerat repellendus voluptatem?.</p>
+                    <p> Empresario, informático y filántropo estadounidense, conocido por haber creado y fundado junto con Paul Allen, la empresa Microsoft. De igual forma es conocido por haber creado, también con Paul Allen, el sistema operativo para computadoras Windows. </p>
                 </div>
             </div>
             
             <div class="img"">
-                <img src="./assets/imagenes/ada.jpeg" alt="Imagen de Ada"loading="lazy" width="300" >
+                <img src="./assets/imagenes/Mateo.jpg" alt="Imagen de Mateo Salvato"loading="lazy" width="300" >
                 <br>
-                <h3>Ada Lovelace</h3>
-                <br>
+                <h3>Mateo Salvato</h3>
+                
                 
                 <div class="ParrafoTarjeta">
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti ducimus optio reprehenderit nulla dicta magnam veniam suscipit omnis? Cumque nesciunt, similique ea at repudiandae maxime vel quaerat repellendus voluptatem?.</p>
+                    <p> Emprendedor argentino especializado en robótica, escritor y fundador de la aplicación Háblalo que facilita la comunicación a personas con dificultades en el habla. En 2021 editó su primer libro, La Batalla del Futuro.</p>
                 </div>
             </div>
         </div>
         
     </section>
     
-    <section class="ImagenPartida">
+    <section class="ImagenPartida" id="LugaryFecha">
         <div class="ImagenIzq">
             
         </div> 
 
         <div class="lugar">
-            <h3> Bs As -  Octubre</h3>
-            <p class="texto__lugar"> Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidado que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+            <h2> Bs As -  Octubre</h2>
+            <p class="texto__lugar"> La Conferencia tendrá lugar en el Aula Magna de la Facultad de Ingeniería de la Universidad de Buenos Aires. Esta Universidad está nominada dentro de las mejores en latinoamérica y es un honor para ella ser sede de este gran evento. 
+            La Universidad se encuentra en Av. Paseo Colón 850, CABA.
+            La Conferencia tendrá lugar el viernes 14 de octubre de 2022 a las 18:00hs. Para poder participar, se deberá adquirir el ticket previamente.
+            </p>
             <button class="boton">
                 <a href="Conoce_mas">Comoce más</a>
             </button>
         </div>
     </section>
     
-    <section class="ConvierteteEnOrador">
-        <h5 > CONVIÉRTETE EN UN</h5>
-        <h2 >ORADOR</h2>
-        <p>Anotate como orador para dar una charla</p>
-        <form action="">
-            <input type="Nombre" placeholder="Nombre">
-            <input type="Apellido" placeholder="Apellido">
+    <section class="ConvierteteEnOrador" id="Contacto">
+        <div class="TituloConvEnOrador">
+            <h5 > CONVIÉRTETE EN UN</h5>
+            <h2 >ORADOR</h2>
             <br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+            <p>Anotate como orador para dar una charla</p>
+        </div>
+        <div class="formulario">
+            <form action="">
+                <input type="Nombre" placeholder="Nombre">
+                <input type="Apellido" placeholder="Apellido">
+                <br><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+            </form>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div>
-                    <input type="submit"value="Enviar solicitud">
+                <p>Envianos tu solicitud haciendo clic aquí.</p>
+                <br>
+                <div class="botonEnviar">
+                    <input type="submit"value="Enviar solicitud" class="letraTrasparente">
                 </div>
-                
+                    
             </div>
-        </form>
+            
+        </div>
+    <footer class="footer__contenedor">
+        <nav class="navegador__footer">
+            <div class="RenglonUno">
+                <a href="preguntas">Preguntas Frecuentes</a>
+                <a href="#Contacto" >Contacto</a>
+                <a href="Prensa">Prensa</a>
+            </div>
+            <div class="RenglonDos">
+                <a href="Condiciones">Términos y Condiciones</a>
+                <a href="Privacidad">Privacidad</a>
+            </div>
+            
+        </nav>
         
         
-    <!-- prueba-->
-    </section>
-    
-    </section>
-
-<br><br>
-
+   </footer>
 
 </body>
 </html>
