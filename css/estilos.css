@@ -10,78 +10,33 @@ html{
     font-family: Montserrat;
 }
 
-.header__contenedor{
-    display: flex;
-    justify-content: center;
+.headerContenedorColor{
     background-color: rgb(52,58,64);
-    width: 100%;
-    height: 13vh;
-    color: white;
-    position: fixed;
-}   
-.logo{
-    width: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 2rem;
-}
-.img__logo{
-    width: 35%;
-}
-.navegador{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   width: 60%;
-   font-size: 0.9rem;
-}
-.RenglonUno{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 55%;
-    height: 65%;
-}
-.RenglonDos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 40%;
-    height: 65%;
-}
-header a{
-   color: white;
-   text-decoration: none;
-}
-.comprar__tickets{
-    color: rgb(54, 167, 54);
 }
 
-.Principal{
-    /*width: 75vw;*/
-    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../assets/imagenes/ba1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content:flex-end;
-    width: 100%;        
+
+.headerStart{
+    justify-content:flex-start;
+    
 }
-.Texto{
-    /*background-color: blue;*/
-    width: 30vw;
-    color: white;
-    display: flex;
-    flex-direction: column;  
+.headerEnd{
+    margin-left: 35%;
     justify-content: space-around;
-    align-items: flex-end;
-    text-align: end;
-    margin: 2%;
-    line-height: 1.4rem;
+    width: 60%;
+    
+}
+.ComprarTicketColor{
+    color: rgb(54, 167, 54);
+}
+.filtro{
+    filter: brightness(50%);
+}
+.texto{
+    font-size: 0.9rem;
+    text-align:left;
+    justify-content: end;
+    padding-left: 50%;
+    width: 100vw;
 }
 .link{
     background-color: transparent;
@@ -134,19 +89,22 @@ main a {
     justify-content: flex-start;
     align-items:center;
     color: black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .ParrafoTarjeta{
     width: 80%;
     font-size: 0.8rem;
     margin: 1,5%;
     line-height: 1.4rem;
+    padding-bottom: 5%;
 }
 
 .ImagenPartida{
     display: flex;
     height: 100vh;
     padding-top: 7%;
-    /*margin-bottom: 3%;*/
 }
 .ImagenIzq{
     display: flex;
@@ -164,7 +122,7 @@ main a {
     font-size: 1rem;
     height: 100%;
     width: 50%;
-    background-color: rgb(94, 102, 111);
+    background: linear-gradient(to left, rgb(52,58,64), rgb(94, 102, 111));
     color: aliceblue;
 }
 .texto__lugar{
@@ -188,7 +146,7 @@ button a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 80vh;
+    height: 90vh;
     padding-top: 5%;
     background-color:rgba(0,0,0,0.2)
 }
@@ -209,7 +167,7 @@ button a{
     margin-left: 35%;
     background-color: rgb(54, 167, 54);
     width: 30vw;
-    padding: 1.5%;
+    padding: 1,5%;
     border-color: rgb(54, 167, 54);
     border-radius: 10px;
 }
@@ -224,80 +182,34 @@ button a{
 }
 
 .footer__contenedor{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: rgb(52,58,64);
-    width: 98.9vw;
-    height: 10vh;
-    color: white;
-    margin-top: 3%;
-}   
-.navegador__footer{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   width: 90%;
-   font-size: 0.9rem;
-}
-footer a{
-   color: white;
-   text-decoration: none;
+    background: linear-gradient(to right, rgb(52,58,64), rgb(90, 98, 106)); 
 }
 
 @media screen and (max-width:1024px) {
-    .header__contenedor{
-       flex-direction: column;
-       height: 15vh;
-    }   
-    .logo{
-        justify-content: flex-end;
-        align-items: center;
-        height: 35%;
-        font-size: 1.5rem;
-        width: 100%;
-        padding-right: 6%;
-    }
-    .img__logo{
-        width: 15vw;
-        height: 10vh;
-    }
-    .navegador{
-        background: linear-gradient(to bottom, rgb(52,58,64), rgb(75, 82, 89));
-        flex-direction: column;
-       justify-content:center;
-       align-items:center;
-       padding-left: 2%;
-       /*line-height:1.5rem;*/
-       height: 65%;
-       width: 100%;
-    }
-    .RenglonUno{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 65%;
-    }
-    .RenglonDos{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 65%;
-    }
-    .Principal{
+    /*.Principal{
         align-items: flex-end;
         justify-content:flex-start;
         padding-top: 45%;    
         font-size: 0.9rem;
-    }
-    .Texto{
-        width: 60vw;
-        margin: 2%;
+    }*/
+    
+    .texto{
+        font-size: 0.8rem;
+        padding: left 0;
+        
+        width: 90vw;
+        margin:0%;
+        justify-content: flex-start;
+        
         line-height: 1rem;
+        
+    }
+    .imagenes{
+        padding-top: 20%;
     }
     .link{
-        width: 45vw;
-        flex-direction: column;
+        width: 90vw;
+        flex-direction: row;
         justify-content: flex-end;
         padding: 2%;
         margin: 5%;
@@ -317,7 +229,7 @@ footer a{
         width: 100%;
     }
     .img{
-        margin: 0%;
+        margin: 3%;
     }
     .ParrafoTarjeta{
         width: 100%;
@@ -369,18 +281,6 @@ footer a{
         font-size: 0.9rem;
     }
     
-    .footer__contenedor{
-        height: 15vh;
-        background: linear-gradient(to bottom, rgb(52,58,64), rgb(75, 82, 89));  
-        
-    }
-    .navegador__footer{
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        height: 60%;
-
-     }
     
     
 }

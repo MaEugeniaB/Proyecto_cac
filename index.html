@@ -6,48 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto CAC</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="header__contenedor">
-        <div class="logo">
-            <img class="img__logo" src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy" width="200">
-            <!--<h2>Conf Bs As</h2>-->
-            <a href="#" >Conf Bs As</a>
-        </div>
-       
-        <nav class="navegador">
-            <div class="RenglonUno">
-                <a href="#" >La Conferencia</a>
-                <a href="#oradores" >Los Oradores</a>
-                <a href="#LugaryFecha" >Lugar y Fecha</a>
-            </div>
-            <div class="RenglonDos">
-                <a href="#Contacto" >Conviértete en Orador</a>
-                <a class="comprar__tickets" href="./pages/comprartickets.html" >Comprar Tickets</a>
-            </div>
-            
-        </nav>
-    </header>
    
-    <main class="Principal">
-                <!-- <img src="./assets/imagenes/ba2.jpg" alt="imagen del Palacio de Aguas Argentinas" loading="lazy"> -->
-        <div class="Texto">
+    <header class="headerContenedorColor">
+    
+        <nav class="navbar navbar-expand-lg navbar-dark headerContenedorColor fixed-top">
+            <div class="container-fluid">
+                <ul class="headerStart">
+                    <img class="img__logo" src="./assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy" width="150">                
+                    <a class="navbar-brand" href="#">Conf Bs As</a>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav list-style circle me-auto mb-2 mb-lg-0 headerEnd">
+                        <li class="nav-item">
+                            <a class="nav-link active border-bottom" aria-current="page" href="#">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border-bottom" href="#oradores">Los Oradores</a>
+                        </li>
+                        <li>
+                            <a class="nav-link border-bottom" href="#LugaryFecha">Lugar y Fecha</a>
+                        </li>
+                        <li>
+                            <a class="nav-link border-bottom" href="#contacto">Conviértete En Orador</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ComprarTicketColor border-bottom" href="./pages/comprartickets.html">Comprar Tickets</a>
+                        </li>
+              
+                    </ul>
+            
+                </div>
+            </div>
+      </nav>
+    </header>
+    
+   
+    <main class="imagenes position-relative">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner filtro">
+              <div class="carousel-item active">
+                <img src="./assets/imagenes/ba1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/imagenes/ba2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/imagenes/ba3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="texto position-absolute top-50 text-white">
             <h1 >Conf Bs As</h1>
             <br>
             <p > Llega a la Ciudad Autónoma de Buenos Aires, la conferencia más esperada. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Vení a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!  </p>
+            <div class="link">
+                <button>
+                    <a href="#contacto" class="linkPPal">Quiero ser orador</a>
+                </button>
+                <button class="boton__verde">
+                    <a href="./pages/comprartickets.html" class="linkPPal">Comprar ticket</a>
+                </button>
+               
+           </div>
         </div>
-        
-       <div class="link">
-            <button>
-                <a href="#Contacto" class="linkPPal">Quiero ser orador</a>
-            </button>
-            <button class="boton__verde">
-                <a href="./pages/comprartickets.html" class="linkPPal">Comprar ticket</a>
-            </button>
-           
-       </div>
-        
     </main>
 
     <section class="Oradores" id="oradores">
@@ -58,17 +96,6 @@
        
         <div class="Tarjetas">
             <div class="img">
-                <img src="./assets/imagenes/Marck2.jpg" alt="Imagen de Mark Zuckerberg"loading="lazy" width="300">
-                <br>
-                <h3>Mark Zuckerberg</h3>
-                
-                
-                <div class="ParrafoTarjeta">
-                    <p>Programador y empresario estadounidense, uno de los creadores y fundadores de Facebook (desde 2021, Meta Platforms) y la red social homónima, y su actual presidente. Para desarrollar la red, Zuckerberg contó con el apoyo de sus compañeros de la Universidad de Harvard.</p>
-                </div>
-            </div>
-            
-            <div class="img">
                 <img src="./assets/imagenes/bill.jpg" alt="Imagen de Bill Gates"loading="lazy" width="300">
                 <br>
                 <h3>Bill Gates</h3>
@@ -78,7 +105,18 @@
                     <p> Empresario, informático y filántropo estadounidense, conocido por haber creado y fundado junto con Paul Allen, la empresa Microsoft. De igual forma es conocido por haber creado, también con Paul Allen, el sistema operativo para computadoras Windows. </p>
                 </div>
             </div>
-            
+
+            <div class="img">
+                <img src="./assets/imagenes/Marck2.jpg" alt="Imagen de Mark Zuckerberg"loading="lazy" width="300">
+                <br>
+                <h3>Mark Zuckerberg</h3>
+                
+                
+                <div class="ParrafoTarjeta">
+                    <p>Programador y empresario estadounidense, uno de los creadores y fundadores de Facebook (desde 2021, Meta Platforms) y la red social homónima, y su actual presidente. Para desarrollar la red, Zuckerberg contó con el apoyo de sus compañeros de la Universidad de Harvard.</p>
+                </div>
+            </div>
+             
             <div class="img"">
                 <img src="./assets/imagenes/Mateo.jpg" alt="Imagen de Mateo Salvato"loading="lazy" width="300" >
                 <br>
@@ -100,7 +138,7 @@
 
         <div class="lugar">
             <h2> Bs As -  Octubre</h2>
-            <p class="texto__lugar"> La Conferencia tendrá lugar en el Aula Magna de la Facultad de Ingeniería de la Universidad de Buenos Aires. Esta Universidad está nominada dentro de las mejores en latinoamérica y es un honor para ella ser sede de este gran evento. 
+            <p class="texto__lugar"> La Conferencia tendrá lugar en el Aula Magna de la Facultad de Ingeniería de la Universidad de Buenos Aires. Esta Universidad está considerada dentro de las mejores en latinoamérica y es un honor para ella ser sede de este gran evento. 
             La Universidad se encuentra en Av. Paseo Colón 850, CABA.
             La Conferencia tendrá lugar el viernes 14 de octubre de 2022 a las 18:00hs. Para poder participar, se deberá adquirir el ticket previamente.
             </p>
@@ -110,7 +148,7 @@
         </div>
     </section>
     
-    <section class="ConvierteteEnOrador" id="Contacto">
+    <section class="ConvierteteEnOrador" id="contacto">
         <div class="TituloConvEnOrador">
             <h5 > CONVIÉRTETE EN UN</h5>
             <h2 >ORADOR</h2>
@@ -134,22 +172,26 @@
             </div>
             
         </div>
-    <footer class="footer__contenedor">
-        <nav class="navegador__footer">
-            <div class="RenglonUno">
-                <a href="preguntas">Preguntas Frecuentes</a>
-                <a href="#Contacto" >Contacto</a>
-                <a href="Prensa">Prensa</a>
-            </div>
-            <div class="RenglonDos">
-                <a href="Condiciones">Términos y Condiciones</a>
-                <a href="Privacidad">Privacidad</a>
-            </div>
-            
-        </nav>
-        
-        
-   </footer>
+    </section>    
 
+    <footer class="footer__contenedor">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Contactanós</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Prensa</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Conferencias</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Terminos y Condiciones</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Privacidad</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Estudiantes</a></div>
+
+            </div>
+
+        </div>
+         
+    </footer>
+
+    
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
