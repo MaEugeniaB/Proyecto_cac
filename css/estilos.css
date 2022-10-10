@@ -104,11 +104,18 @@ main a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
     color: black;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.botones{
+    display: flex;
+    justify-content:left;
+    margin: 2%;
+    margin-right: 10%;
+    width: 70%;
 }
 .ParrafoTarjeta{
     width: 80%;
