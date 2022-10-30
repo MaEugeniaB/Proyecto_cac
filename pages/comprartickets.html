@@ -5,17 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto CAC</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-       <h1>
-        Error 404
-       </h1>
-        
+    
+    <header class="headerContenedorColor">
+    
+        <nav class="navbar navbar-expand-lg navbar-dark headerContenedorColor fixed-top">
+            <div class="container-fluid">
+                <ul class="headerStart">
+                    <img class="img__logo" src="../assets/imagenes/codo a codo.png" alt="logo codo a codo" loading="lazy">                
+                    <a class="navbar-brand" href="#">Conf Bs As</a>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav list-style circle me-auto mb-2 mb-lg-0 headerEnd">
+                        <li class="nav-item">
+                            <a class="nav-link active border-bottom" aria-current="page" href="../index.html">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border-bottom" href="../index.html#oradores">Los Oradores</a>
+                        </li>
+                        <li>
+                            <a class="nav-link border-bottom" href="../index.html#LugaryFecha">Lugar y Fecha</a>
+                        </li>
+                        <li>
+                            <a class="nav-link border-bottom" href="../index.html#contacto">Conviértete En Orador</a>
+                        </li>
+                        <li>
+                            <a class="ComprarTicketColor border-bottom" href="#">Comprar Tickets</a>
+                        </li>
+              
+                    </ul>
+            
+                </div>
+            </div>
+      </nav>
     </header>
-   
+
+    <section class="precios">
+        <div class="card m-2 border-primary" style="width: 15rem;">
+            <div class="card-body p-0">
+              <h5 class="card-title text-center p-4 bg-primary text-white">Estudiante</h5>
+              <h6 class="card-subtitle mb-2 text-center">Tienen un descuento</h6>
+              <h3 class="text-center">80%</h3>
+              <p class="card-text pb-4 text-center text-muted">*Presentar documentación</p>
+            </div>
+          </div>
+          <div class="card m-2 border-info" style="width: 15rem;">
+            <div class="card-body p-0">
+              <h5 class="card-title text-center p-4 bg-info text-white">Trainee</h5>
+              <h6 class="card-subtitle mb-2 text-center">Tienen un descuento</h6>
+              <h3 class="text-center">50%</h3>
+              <p class="card-text  pb-4 text-center text-muted">*Presentar documentación</p>
+            </div>
+          </div>
+          <div class="card m-2 border-warning " style="width: 15rem;">
+            <div class="card-body p-0">
+              <h5 class="card-title text-center p-4 bg-warning text-white">Junior</h5>
+              <h6 class="card-subtitle mb-2 text-center">Tienen un descuento</h6>
+              <h3 class="text-center">15%</h3>
+              <p class="card-text pb-4 text-center text-muted">*Presentar documentación</p>
+            </div>
+          </div>
+    </section>
+
+    <section class="tickets">
+        <div class="titulo__Comprar">
+            <h6>VENTA</h6>
+            <h2>VALOR DE TICKET $200</h2>
+        </div>
+        <div class="ComprarTicket">
+            <form action="">
+                <div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido">
+                    </div>
+                  </div>
+                <div class="mb-2">
+                    <label for="" class="form-label"></label>
+                    <input type="email" class="form-control  width: 0.5" id="mail" aria-describedby="emailHelp" placeholder="Email" id="mail">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="cantidadTickets" class="form-label">Cantidad</label>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" id="cantidadTickets">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="categoría" class="form-label">Categoría</label>
+                        <select class="form-select" aria-label="categoria" id="categoria">
+                            <option value ="" selected>--Seleccione--</option>
+                            <option value="0">Sin Categoría</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="alert alert-primary mb-3">
+                    Total a pagar: $ <span id="Total" class="aling-middle"></span> 
+                </div>   
+                <div class="d-grid gap-2 d-md-flex justify-content-ml-0">
+                    <button type="reset" class= "btn botonBorrar" id ="btnBorrar">Borrar</button>
+                    <button type="button" class="btn botonResumen" id="btnResumen">Resumen</button>
+                </div>
+                
+            </form>
+           
+
+           
+            
+        </div>
+    </section>
+
+    <footer class="footer__contenedor">
+        <div class="container">
+            <div class="row">
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a></div>
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Contactanós</a></div>
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Prensa</a></div>
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Conferencias</a></div>
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Terminos y Condiciones</a></div>
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Privacidad</a></div>
+                <div class="col py-4 px-4 text-center"><a class="text-white text-decoration-none" href="">Estudiantes</a></div>
+
+            </div>
+
+        </div>
+         
+    </footer>
+
+
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/comprartickets.js"></script>
 </body>
 </html>

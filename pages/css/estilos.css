@@ -372,28 +372,6 @@ button a{
         font-size: 0.9rem;
     }
     
-    .precios{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-left: 0%;
-    }
-    .ComprarTicket{
-        margin-left: 10%;
-        width: 80vw;
-        height: 50vh;
-    }
-    .botonBorrar{
-       
-        margin-left: 0%;
-        width: 70vw;
-    }
-    .botonResumen{
-        
-        margin-left: 0%;
-        width: 70vw;
-    }
 }
 
 @media screen and (min-width:450px) and (max-width:571px) {   
@@ -414,6 +392,7 @@ button a{
     }
     .texto{
         font-size: 0.8rem;
+        /*font-weight: 1rem;*/
         padding-left: 5%;
         width: 90vw;
         margin:0%;
@@ -432,7 +411,8 @@ button a{
         margin: 2%;
     }
     main button{
-        margin-top: 1%; 
+        margin-top: 1%;
+       
     }
    
     .Oradores{
@@ -500,27 +480,6 @@ button a{
     .letraTrasparente{
         font-size: 0.9rem;
     }
-
-    .precios{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-left: 0%;
-    }
-    .ComprarTicket{
-        margin-left: 10%;
-        width: 80vw;
-        height: 50vh;
-    }
-    .botonBorrar{
-        margin-left: 20%;
-        width: 50vw;
-    }
-    .botonResumen{
-        margin-left: 20%;
-        width: 50vw;
-    }
 }
 
 
@@ -544,6 +503,7 @@ button a{
     }
     .texto{
         font-size: 0.6rem;
+        /*font-weight: 0.5rem;*/
         padding-left: 5%;
         width: 90vw;
         margin:0%;
@@ -559,6 +519,7 @@ button a{
         flex-direction: row;
         justify-content: flex-end;
         padding: 0%;
+        /*margin: 1%;*/
     }
     main button{
         background-color: transparent;
@@ -622,6 +583,9 @@ button a{
         width: 25vh;
     }
     
+    /*.ConvierteteEnOrador{
+        height: 100vh;
+    }*/
     .TituloConvEnOrador{
         padding-top: 3%;
      }
@@ -630,26 +594,5 @@ button a{
     }
     .letraTrasparente{
         font-size: 0.9rem;
-    }
-
-    .precios{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-left: 0%;
-    }
-    .ComprarTicket{
-        margin-left: 10%;
-        width: 80vw;
-        height: 50vh;
-    }
-    .botonBorrar{
-        margin-left: 20%;
-        width: 50vw;
-    }
-    .botonResumen{
-        margin-left: 20%;
-        width: 50vw;
     }
 }
